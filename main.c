@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define ARR_LEN 1024 * 32
+#define ARR_LEN 256
 
 int calc_digit(int number)
 {
 	size_t digit = 0;
 
 	if (number == 0)
-		return digit;
+		return 1;
 	
 	while (number != 0) {
 		number /= 10;
